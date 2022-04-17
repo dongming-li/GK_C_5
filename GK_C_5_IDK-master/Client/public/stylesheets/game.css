@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/* Images from https://www.toptal.com/designers/subtlepatterns/ */
+.hand {
+    background-image: url('/images/congruent_pentagon.png');
+    width: 70%;
+    display: flex;
+}
+
+.menu {
+    background-color: grey;
+    width: 10%;
+}
+
+.health {
+    border-style: solid;
+    border-color: red;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 1000px;
+}
+
+.name {
+    text-align: center;
+    font-family: ubuntu;
+    font-size: 18px;
+}
+
+.button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.mana {
+    background-color: #FFFFFF;
+    width: 5%;
+    position: relative;
+}
+
+.mana_bar {
+    background: blue;
+    width: 100%;
+    position: absolute; 
+    bottom: 0; 
+}
+
+.mana_text {
+    position: absolute;
+    bottom: 50%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: ubuntu;
+}
+
+.deck {
+    background-image: url('/images/dark-triangles.png');
+    width: 15%;
+}
+
+.field {
+    width: 100%;
+    background-image: url('/images/congruent_outline.png');
+    display: flex;
+}
+
+.zone {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+/* Cards */
+
+.game_card{
+    width: 20%;
+
+    text-align: center;
+    display: block;
+    font-size: .85em;
+    padding: 5px;
+
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  
+  .card_top {
+    text-align: center;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background: radial-gradient(ellipse at center, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 76%,rgba(33,180,226,1) 95%,rgba(183,222,237,1) 100%);
+  }
+  
+  .card_middle {
+    height: 40%;
+    width: 90%;
+    display: inline-flex;
+    background-size: cover;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    
+    margin-top: -2px;
+  }
+  
+  .card_side_bar {
+    width: 20%;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    
+    display: inline-block;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: -2px;
+    margin-left: -2px;
+  }
+  
+  .card_mana_cost {
+    width: 50%;
+    background: blue;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .card_attk {
+    width: 50%;
+    background: red;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .card_def {
+    width: 50%;
+    background: green;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+  }
+  
+  .card_stat{
+    text-align: center;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    
+    margin-top: -2px;
+    background: radial-gradient(ellipse at center, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 76%,rgba(33,180,226,1) 95%,rgba(183,222,237,1) 100%);
+  }
+  .card_desc {
+    width: 90%;
+    margin: auto;
+    
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -2px;
+
+    background: radial-gradient(ellipse at center, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%);
+  }
+
+  .chat_panel {
+    position: fixed;
+    width: 20%;
+    height: 5%;
+    bottom: 25%;
+    right: 0;
+    background: black;
+}
+
+#msg_window {
+    max-height: 192px;
+    overflow-y: auto;
+}
+
+
+  .chat_view {
+    position: fixed;
+    width: 20%;
+    bottom: 30%;
+    right: 0;
+    background: white;
+  }
+  .card-body{
+    position: relative;
+    overflow: auto;
+    max-height: 50%;
+    bottom: 35%;
+    right: 0;
+    background: white;
+    flex-direction:column;
+  }
+  .chat_msg {
+      position: relative;
+  }
+
+  .collapse {
+    max-height: 50%;
+  }
+
+  .show {
+    max-height: 50%;
+  }

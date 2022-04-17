@@ -1,0 +1,117 @@
+/*
+This file is part of IDK Does Kards.
+
+IDK Does Kards is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+IDK Does Kards is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with IDK Does Kards.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Login */
+.form_login {
+  width: 45%;
+  margin: auto;
+  padding: 5%;
+}
+
+/* Index */
+.index {
+  display: flex;
+  width: 95%;
+  margin:auto;
+}
+
+.index_main {
+ width: 80%;
+}
+
+.index_side {
+ width: 20%;
+}
+
+/* index_decks */
+.index_decks {
+  width: 100%;
+  background-color: 	#C0C0C0;
+  border-style: none;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.index_decks .header {
+  text-align: center;
+  background-color: #3333FF;
+  margin-bottom: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+/* play */
+.play_button {
+  width: 40%;
+  height: 100px;
+  display: block;
+  margin: auto;
+  background-color: #C0C0C0;
+  border-radius: 10px;
+  border-color: #3333FF;
+  margin-top: 20px;
+}
+
+.play_button:hover {
+  cursor: hand;
+  box-shadow: 0 0 10px #3333FF;
+
+}
+
+.card_upload {
+  width: 20%;
+  margin: auto;
+  display: block;
+  background-color: #C0C0C0;
+  border-radius: 10px;
+  border-color: #3333FF;
+  margin-top: 20px;
+  text-align: center;
+  height: 50px;
+}
+
+.card_upload:hover {
+  cursor: hand;
+  box-shadow: 0 0 10px #3333FF;
+}
+.hidden {
+  display: none;
+}
+
+/* The Modal (background) */
+.modal_game {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}

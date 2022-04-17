@@ -1,0 +1,15 @@
+<div id="connection_modal" class="modal_game">
+<div class="modal-content">
+    <span class="close" onclick="$('#connection_modal').css('display','none')">&times;</span>
+    <div>Waiting for lobby:</div>
+    <label for="PID_field">Public ID:</label>
+    <div id="PID_field"></div>
+    <label for="PrivID_field">Private ID:</label>
+    <div id="PrivID_field"></div>
+    <label for="OppID_field">Opponent ID:</label>
+    <div id="OppID_field"></div>
+    <label for="GID_field">Game ID:</label>
+    <div id="GID_field"></div>
+    <button onclick="waitForLogin()">Refresh</button>
+  </div>
+</div>

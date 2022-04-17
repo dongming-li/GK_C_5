@@ -1,0 +1,62 @@
+<html>
+        <head>
+            <% include ../partials/game_generic %>
+        </head>
+        <body id="game_wrapper"> 
+            <div class="global">
+                <div class="zone">
+                    <div id="opp_deck" class="deck">
+                                
+                    </div>
+                    <div id="opp_mana" class="mana">
+                        <div id="opp_mana_bar" class="mana_bar">
+                        </div>
+                        <div id="opp_mana_text" class="mana_text">
+                        </div>
+                    </div>
+                    <div id="opp_menu" class="menu">
+                        <div id="opp_health" class="health">
+                        </div>
+                        <div id="opp_name" class="name">
+                        </div>
+                    </div>
+                    <div id="opp_hand" class="hand">
+                            
+                    </div>
+                </div>
+                <div class="zone">
+                    <div id="opp_field" class="field">
+                    </div>
+                </div>
+                <div class="zone">
+                    <div id="local_field" class="field">
+                    </div>
+                </div>
+                <div class="zone">
+                    <div id="local_hand" class="hand">
+                        
+                    </div>
+                    <div id="local_menu" class="menu">
+                        <div id="local_health" class="health">
+                        </div>
+                        <div id="local_name" class="name">
+                        </div>
+                        <button id="pass_turn" value="PassTurn" class="button">Pass Turn</button>
+                        <button id="concede" value="concede" class="button">Concede</button>
+                     </div>
+                    <div id="local_mana" class="mana">
+                        <div id="local_mana_bar" class="mana_bar">
+                        </div>
+                        <div id="local_mana_text" class="mana_text">
+                        </div>
+                    </div>
+                    <div id="local_deck" class="deck">
+
+                    </div>
+                </div>
+            </div>
+
+            <% include ../partials/connection_modal %> 
+            <% include ../partials/chat %>
+        </body>
+    </html>

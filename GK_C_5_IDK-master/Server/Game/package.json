@@ -1,0 +1,13 @@
+{
+  "name": "idk_cpp_wrapper",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node-gyp configure && node-gyp build",
+    "clean": "node-gyp clean",
+    "rebuild": "node-gyp rebuild"  
+  },
+  "dependencies": {
+    "node-gyp": "^3.6.2"
+  }
+}

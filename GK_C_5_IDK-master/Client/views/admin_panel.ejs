@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <% include ../partials/admin_generic %>
+    </head>
+    <body style="margin: auto">
+        <div>
+            <div>Player 1: <%= p1 %></div>
+            <div><button onclick="forceDraw('1')">Draw</button></div>
+        </div>
+        <div>
+            <div>Player 2: <%= p2 %></div>
+            <div><button onclick="forceDraw('2')">Draw</button></div>
+        </div>
+        <div>
+            <div>Match ID: <div id="mid"></div></div>
+            <div><button onclick="startGame()">Start Match</button></div>
+        </div>
+    </body>
+</html>
